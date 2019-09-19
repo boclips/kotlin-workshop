@@ -8,6 +8,12 @@ readLine()
 
 chunkedExample()
 
+readLine()
+
+stringUtilsExamples()
+readLine()
+
+
 
 fun chunkedExample() {
     println("The chunked function")
@@ -17,10 +23,23 @@ fun chunkedExample() {
     println("words = $words")
     readLine()
 
+
     println("words.chunked(3)")
     val chunks = words.chunked(3)
     readLine()
 
     println(chunks) // [[one, two, three], [four, five, six], [seven, eight, nine], [ten]]
+}
+
+fun stringUtilsExamples() {
+    val blankWord = ""
+    println("blankWord = \"\"")
+    if(blankWord.isBlank()) {
+        println("Word is blank, pad it out a bit")
+        blankWord.padEnd(4, 'o')
+        blankWord.padEnd(4, 'k')
+    }
+    println(blankWord.substringBefore("o", "New word before o"))
+    println(blankWord.substringAfter("k","new words after o"))
 }
 
