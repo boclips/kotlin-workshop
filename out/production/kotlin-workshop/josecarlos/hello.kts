@@ -2,7 +2,13 @@ package josecarlos
 
 println("Thanks for joining the talk!")
 ask("Should we get started?")
+
 printPausing("Great, so kotlin was designed with a few principles in mind!")
+
+printPausing("Concise")
+printPausing("Safe")
+printPausing("Interoperable")
+printPausing("Tool-friendly")
 
 
 
